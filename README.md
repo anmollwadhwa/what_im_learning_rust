@@ -1,3 +1,3 @@
 
-# This repo is the record of my learning in Rust.
+ This repo is the record of my learning in Rust.
 
