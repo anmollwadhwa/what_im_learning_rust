@@ -13,7 +13,20 @@
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
 fn main() {
-    // You can optionally experiment here.
+    calculate_price_of_apples(41);
+}
+
+
+fn calculate_price_of_apples(quantity: i32) ->i32 {
+    let mut price: i32 = 2;
+    if quantity  > 40 {
+        price = 1; 
+    }
+
+    let bill: i32 = price * quantity;
+    println!("{bill}");
+    bill
+
 }
 
 // Don't change the tests!
