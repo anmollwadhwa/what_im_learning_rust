@@ -1,16 +1,20 @@
 use std::io;
 
 fn main() {
-    let mut user_temp = String::new();
-    let mut user_unit =String::new();
     println!("Welcome to temperature converter");
 
  loop {    
-    println!("Enter the temp ( without unit ) you wish to convert");
+
+    let mut user_temp = String::new();
+    let mut user_unit =String::new();    
+    println!("Enter the temp ( without unit ) you wish to convert or Press Q to exit");
 
     io::stdin()
             .read_line(&mut user_temp)
             .expect("Failed to readline");
+    if user_temp.trim().to_lowercase() == "q"{
+        break;
+    }
 
     println!("Now enter the temperature unit");
 
