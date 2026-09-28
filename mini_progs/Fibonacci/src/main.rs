@@ -30,10 +30,13 @@ loop {
         println!("Please enter number greater than 1");
         continue;
     } else if n>47 {
-        println!("Please enter number smaller than 47");    
+        println!("Please enter number smaller than 48");
+        continue;    
     } else if n==1 {
-        println!("0");
+        println!("The 1st number in the fibonacci series is 0");
+        continue;
     }
+
 
     for _i in 0..(n-2) {
         let next: i32 = a + b;
